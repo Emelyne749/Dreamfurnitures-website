@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order | Dream Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo1.PNG" alt="Dream Furniture Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cusreview.html">Customer_Reviews</a>
+            <a href="services.html">Services</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Order Your Furniture</h1>
+        <p>Please fill in the form below to place your order.</p>
+
+        <form id="orderForm" class="contact-form" method="POST">
+            <label for="product">Product Name</label>
+            <input type="text" id="product" name="product" placeholder="e.g., Sofa, Chair, TV Stand" required>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="notes">Additional Notes (Optional)</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+
+            <!-- Product Image -->
+            <div id="product-image">
+                <label>Selected Product Image:</label>
+                <img id="order-image" src="" alt="Product Image" style="max-width: 100%; height: auto;">
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Your dream is our priority.<br>Visit us at Gisozi 16 KG 23</p>
+        <p>
+            <a href="contacts.html">Contact Us</a> |
+            <a href="about.html">About</a>
+        </p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <!-- Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span id="popup-close" class="popup-close">&times;</span>
+      <h2>Thank You for Your Order!</h2>
+      <p>We have received your order. You will hear from us within the next 24 hours.</p>
+  </div>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Dream Furniture Limited</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo1.PNG" alt="Dream Furniture Logo" />
+    </div>
+    
+    <button id="nav-toggle" class="nav-toggle">&#9776;</button>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cusreview.html">Customer_Review</a>
+      <a href="services.html">Services</a>
+      <a href="contacts.html" class="active">Contacts</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Whether you have questions about our furniture, want to get a quote, or need more information, feel free to reach out to us. We are here to assist you!</p>
+
+    <section>
+      <h2>Our Location</h2>
+      <address>
+        <strong>Visit us at:</strong><br />
+        Dream Furniture Limited<br />
+        Gisozi 16 KG 23, Kigali, Rwanda<br />
+        <span>Open: Monday – Saturday, 9:00 AM to 6:00 PM</span>
+      </address>
+    </section>
+
+    <section>
+      <h2 style="margin-top: 40px;">Watch Our Workshop Tour</h2>
+      <video width="100%" height="auto" controls autoplay muted style="max-width: 700px;">
+        <source src="images/tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2 style="margin-top: 40px;">Contact Details</h2>
+      <p>
+        <strong>Phone:</strong> +250 788 745 803<br />
+        <strong>Email:</strong> <a href="mailto:ndikumanaelie1024@gmail.com">ndikumanaelie1024@gmail.com</a><br />
+        <strong>Website:</strong> <a href="http://www.dreamfurniture.rw" target="_blank" rel="noopener noreferrer">www.dreamfurniture.rw</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Get in Touch</h2>
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Your dream is our priority.<br />Visit us at Gisozi 16 KG 23</p>
+    <p>
+      <a href="contacts.html">Contact Us</a> |
+      <a href="about.html">About</a>
+    </p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
